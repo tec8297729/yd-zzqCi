@@ -8,3 +8,4 @@ after_success:
 before_install:
 - openssl aes-256-cbc -K $encrypted_2ec4b1025606_key -iv $encrypted_2ec4b1025606_iv
   -in gitzzqci_rsa.enc -out ~\/.ssh/gitzzqci_rsa -d
+  - chmod 600 ~/.ssh/gitzzqci_rsa
