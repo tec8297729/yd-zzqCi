@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "10.14.1" #指定版本
-# install 阶段：安装依赖
-
-# script 阶段：运行脚本（用来指定构建或测试脚本）
+- 10.14.1
 script: true
+
+after_success:
+  - ssh root@211.149.195.231 -p 22000
+before_install:
+- openssl aes-256-cbc -K $encrypted_2ec4b1025606_key -iv $encrypted_2ec4b1025606_iv
+  -in gitzzqci_rsa.enc -out ~\/.ssh/gitzzqci_rsa -d
