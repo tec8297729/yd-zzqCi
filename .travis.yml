@@ -4,7 +4,7 @@ node_js:
 install: true
 script: true
 after_success:
-- ssh root@211.149.195.231 -p 22000
+- ssh root@129.28.117.208
 before_install:
 - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
   -in zzq_rsa.enc -out ~\/.ssh/zzq_rsa -d
