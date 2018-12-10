@@ -1,0 +1,17 @@
+[2018-12-03T21:55:28.864] [ERROR] cheese - err
+[2018-12-08T21:24:59.324] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:25:20.219] [ERROR] cheese - err
+[2018-12-08T21:25:26.348] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:34:19.823] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:35:20.493] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:37:00.787] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:39:11.947] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:40:12.461] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-08T21:43:56.952] [ERROR] cheese - err
+[2018-12-08T21:50:46.289] [ERROR] cheese - err
+[2018-12-08T21:50:51.036] [ERROR] cheese - err
+[2018-12-08T21:57:29.382] [ERROR] cheese - err
+[2018-12-09T23:11:30.795] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-09T23:16:23.092] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-09T23:16:23.097] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-09T23:16:23.098] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }

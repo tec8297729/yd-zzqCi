@@ -1,0 +1,64 @@
+<!-- 加载其它模板文件 -->
+{% extends 'layout.html' %}
+<!-- 定义title区域块 -->
+{% block title %}
+  z图书管理系统
+{% endblock %}
+
+{% block navTitle %}
+  <li class="active">z图书管理系统</li>
+  <li class="active">新建图书</li>
+{% endblock %}
+<!-- 定义head区域块 -->
+{% block head %}
+
+
+{% endblock %}
+
+<!-- 定义content区域块 -->
+{% block content %}
+<div class="country-create">
+
+  <h1>入库新书</h1>
+  <!-- 在调用了_form页面 -->
+
+  <div class="country-form">
+
+    <form id="w0 country_form" name="country_form" action="/" method="post">
+      <div class="form-group field-book_name required">
+        <label class="control-label" for="book_name">书籍名称</label>
+        <input type="text" id="book_name" class="form-control el-input" name="book_name" maxlength="52"
+          aria-required="true">
+
+        <div class="help-block"></div>
+      </div>
+      <div class="form-group field-author">
+        <label class="control-label" for="author">作者</label>
+        <input type="text" id="author" class="form-control el-input" name="author">
+
+        <div class="help-block"></div>
+      </div>
+      <div class="form-group field-book_img">
+        <label class="control-label" for="book_img">图片</label>
+        <input type="text" id="book_img" class="form-control el-input" name="book_img">
+
+        <div class="help-block"></div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success create_btn" id="create_btn">创建</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script type="module">
+  import Create from '/js/create.js';
+  let create = new Create();
+  let btn = create.createFn();
+  console.log( )
+</script>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  </script>
+  <script src="/js/jquery.js"></script>
+  
+
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <div class="wrap">
+    <nav id="w1" class="navbar-inverse navbar-fixed-top navbar">
+      <div class="container">
+        <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w1-collapse"><span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span></button><a class="navbar-brand" href="/">My Application</a></div>
+        <div id="w1-collapse" class="collapse navbar-collapse">
+          <ul id="w2" class="navbar-nav navbar-right nav">
+            <li><a href="/">首页</a></li>
+            <li><a href="/yii/web/index.php?r=site%2Fabout">About</a></li>
+            <li><a href="/yii/web/index.php?r=site%2Fcontact">Contact</a></li>
+            <li><a href="/yii/web/index.php?r=site%2Flogin">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- 导航 -->
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        {% block navTitle %}{% endblock %}
+      </ul>
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+
+</html>
+{% block scripts %}{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "name" : "zzzBook",
+  "script": "app.js",
+  "log_date_format":"YYYY-MM-DD HH:mm Z",
+  "out_file":"log/node-app.stdout.log",
+  "error_file":"log/node-app.error.log",
+  "watch":true,
+  "instances":"max",
+  "exec_mode":"cluster"
+}

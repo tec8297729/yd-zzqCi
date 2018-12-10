@@ -1,0 +1,44 @@
+<!-- 加载其它模板文件 -->
+{% extends 'layout.html' %}
+<!-- 定义title区域块 -->
+{% block title %}
+  {{ book_name }}
+{% endblock %}
+
+{% block navTitle %}
+  <li class="active">z图书管理系统</li>
+  <li class="active">查看</li>
+{% endblock %}
+<!-- 定义head区域块 -->
+{% block head %}
+
+
+{% endblock %}
+
+<!-- 定义content区域块 -->
+{% block content %}
+<div class="country-view">
+
+  <h1>{{ book_name }}</h1>
+
+  <p>
+    <a class="btn btn-primary" href="/update/{{ id }}">更新</a> 
+    <a class="btn btn-danger delete" href="/" data-id="{{ id }}" data-method="post">删除</a>
+  </p>
+
+  <table id="w0" class="table table-striped table-bordered detail-view">
+    <tr>
+      <th>书籍名称</th>
+      <td>{{ book_name }}</td>
+    </tr>
+    <tr>
+      <th>作者</th>
+      <td>{{ author }}</td>
+    </tr>
+    <tr>
+      <th>更新日期</th>
+      <td>{{ last_return_time|date('Y年m月d日 H:i:s') }}</td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
