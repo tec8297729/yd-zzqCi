@@ -8,7 +8,6 @@ script: true
 after_success:
   - ssh root@211.149.195.231 -p 22000
 before_install:
-    - export TZ='Asia/Shanghai' # 更改时区
-env:
- global:
-   - secure:`mNM8CnxYvO3TzJ4wvohEOX+UTOM9pyjVaNc8Cf26Uu52xvg4B0SGCVf4OOmiDgAxXdX6sCqQ313CS8vjPqL3wN79ydDUc3J3moGg5T471Ei6L7EzTTcXGUK12PfH6a/pSguvB2+3z5OO1FG+OuC1c0VJI8UTnfLWdYv1rIFK2/x/oZsjLQrIzre/XfBOgWQS/jEancBGngmUTXaGwJlYdLcXdwWLxEThE6WIQ8zGNS2gmTjw3YtJd0gAKcKvsHK6rqAuDyhylsoeuk450nYqEcOSpQLENEqs1AJWnPfSDUGrrPtuolC6LGqPhVdLBgr0sw0yKWOWDTpUKbpYJNSEDFtRRSoMll+lyvvUwcpIf1X1FDFoCN+5PmXcU69xnv/u5RSAi28DKG0nEEmsemE8Pcy9hU6NA8ODUXy0l+ZIk1/vX1/6JWPikG9gnSlNqB4PtM3MvbzFqfA0l/m0SlW9BtdCvkhGm4aqRz9Z/vxvNLsF7QhwLKiGgS9CkkyQwsRN2jxJL3TWkAoaynDZN51c+oQ3j7BPSwrkA1MgPuyHfmT59Grb1jfLdgQzZGSsO9avlAodSHivyYQa7dzafTD+Lm1mc70cI8/7k1PBMJhGd6y0khO98fOvM5rBD/GtqMiQk2rCtPXH5R3XBKWm8COstBMJ8br1Nnehl23fL+1kqSA=`
+  - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
+  -in zzq_rsa.enc -out .travis/zzq_rsa -d
+  - export TZ='Asia/Shanghai' # 更改时区
