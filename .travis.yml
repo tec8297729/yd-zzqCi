@@ -10,6 +10,6 @@ after_success:
 before_install:
   - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
   -in zzq_rsa.enc -out .travis/zzq_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
+
 addons:
   ssh_known_hosts: 211.149.195.231
