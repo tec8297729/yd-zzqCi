@@ -4,7 +4,7 @@ node_js:
 install: true
 script: true
 addons:
-  ssh_known_hosts: uedsky.com:1223
+  ssh_known_hosts: 211.149.195.231
 before_install:
 - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
   -in zzq_rsa.enc -out ~/.ssh/zzq_rsa -d
