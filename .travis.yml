@@ -3,9 +3,9 @@ node_js:
 - 10.14.1
 install: true
 script: true
-after_success:
-- ssh root@129.28.117.208
+addons:
+  ssh_known_hosts: uedsky.com:1223
 before_install:
 - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
-  -in zzq_rsa.enc -out ~\/.ssh/zzq_rsa -d
-- export TZ='Asia/Shanghai'
+  -in zzq_rsa.enc -out ~/.ssh/zzq_rsa -d
+- chmod 600 ~/.ssh/zzq_rsa
