@@ -6,12 +6,12 @@
 {% endblock %}
 
 {% block navTitle %}
-  <li class="active">z图书管理系统</li>
-  <li class="active">编辑修改</li>
+<x-breadcrumb title="编辑修改"></x-breadcrumb>
 {% endblock %}
+
 <!-- 定义head区域块 -->
 {% block head %}
-
+<script src="/js/index.js"></script>
 
 {% endblock %}
 
@@ -45,10 +45,16 @@
 
 
       <div class="form-group">
-        <button type="submit" class="btn btn-success update_btn">保存编辑</button> </div>
+        <x-createbtn title="保存编辑" class="update_btn"></x-createbtn>
+      </div>
 
     </form>
   </div>
 
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/btn.min.js" type="module"></script>
+
 {% endblock %}

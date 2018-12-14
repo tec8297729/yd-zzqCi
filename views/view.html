@@ -6,9 +6,9 @@
 {% endblock %}
 
 {% block navTitle %}
-  <li class="active">z图书管理系统</li>
-  <li class="active">查看</li>
+<x-breadcrumb title="查看"></x-breadcrumb>
 {% endblock %}
+
 <!-- 定义head区域块 -->
 {% block head %}
 
@@ -22,7 +22,7 @@
   <h1>{{ book_name }}</h1>
 
   <p>
-    <a class="btn btn-primary" href="/update/{{ id }}">更新</a> 
+    <a class="btn btn-primary" href="/update/{{ id }}">更新</a>
     <a class="btn btn-danger delete" href="/" data-id="{{ id }}" data-method="post">删除</a>
   </p>
 

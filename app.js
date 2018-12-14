@@ -1,26 +1,26 @@
-const koa = require('koa'); // 引入koa框架
-const statics = require('koa-static'); //静态目录中间件
-const render = require('koa-swig'); // html渲染模板引擎
-const co = require('co'); // co组件,和swig配合使用
-// 以下非koa组件
-const log4js = require('log4js'); // 打印错误日志
-const bodyParser = require('koa-bodyparser'); //解析POST数据请求
-const init = require('./controllers/initController'); // 初始化所有路由
-const config = require('./config'); // 配置node文件
-const errorHandler = require('./middleawares/errorHandler'); // 处理错误页面
-const fetch = require('node-fetch'); // 请求接口组件
-
-// import koa from 'koa'; // 引入koa框架
-// import statics from 'koa-static'; //静态目录中间件
-// import render from 'koa-swig'; // html渲染模板引擎
-// import co from 'co'; // co组件,和swig配合使用
+// const koa = require('koa'); // 引入koa框架
+// const statics = require('koa-static'); //静态目录中间件
+// const render = require('koa-swig'); // html渲染模板引擎
+// const co = require('co'); // co组件,和swig配合使用
 // // 以下非koa组件
-// import log4js from 'log4js'; // 打印错误日志
-// import bodyParser from 'koa-bodyparser'; //解析POST数据请求
-// import init from './controllers/initController'; // 初始化所有路由
-// import config from './config'; // 配置node文件
-// import errorHandler from './middleawares/errorHandler'; // 处理错误页面
-// import fetch from 'node-fetch'; // 请求接口组件
+// const log4js = require('log4js'); // 打印错误日志
+// const bodyParser = require('koa-bodyparser'); //解析POST数据请求
+// const init = require('./controllers/initController'); // 初始化所有路由
+// const config = require('./config'); // 配置node文件
+// const errorHandler = require('./middleawares/errorHandler'); // 处理错误页面
+// const fetch = require('node-fetch'); // 请求接口组件
+
+import koa from 'koa'; // 引入koa框架
+import statics from 'koa-static'; //静态目录中间件
+import render from 'koa-swig'; // html渲染模板引擎
+import co from 'co'; // co组件,和swig配合使用
+// // 以下非koa组件
+import log4js from 'log4js'; // 打印错误日志
+import bodyParser from 'koa-bodyparser'; //解析POST数据请求
+import init from './controllers/initController'; // 初始化所有路由
+import config from './config'; // 配置node文件
+import errorHandler from './middleawares/errorHandler'; // 处理错误页面
+
 
 
 const app = new koa(); //koa实例

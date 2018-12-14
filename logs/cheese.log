@@ -15,3 +15,283 @@
 [2018-12-09T23:16:23.092] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
 [2018-12-09T23:16:23.097] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
 [2018-12-09T23:16:23.098] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-11T18:04:20.776] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-12T18:09:58.395] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-12T18:10:02.525] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-12T18:10:33.521] [ERROR] cheese - err
+[2018-12-12T18:10:33.570] [ERROR] cheese - err
+[2018-12-12T18:25:51.995] [ERROR] cheese - err
+[2018-12-12T18:25:52.002] [ERROR] cheese - err
+[2018-12-12T18:25:52.060] [ERROR] cheese - err
+[2018-12-12T18:25:52.073] [ERROR] cheese - err
+[2018-12-12T20:05:31.458] [ERROR] cheese - err
+[2018-12-12T20:05:31.530] [ERROR] cheese - err
+[2018-12-13T00:27:22.328] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:27:22.343] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:27:22.375] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:27:22.439] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:28:34.058] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:28:34.125] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:28:34.201] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:28:34.277] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:28:34.341] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:29:52.298] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:29:52.356] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:30:56.046] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:30:56.122] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:30:56.204] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:31:34.221] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:31:34.287] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:31:34.344] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:31:34.401] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:35:29.417] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:35:29.489] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:35:29.556] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:35:29.628] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T00:35:29.694] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://localhost/yii/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T15:51:19.470] [ERROR] cheese - err
+[2018-12-13T15:51:19.578] [ERROR] cheese - err
+[2018-12-13T15:51:44.178] [ERROR] cheese - err
+[2018-12-13T15:51:44.285] [ERROR] cheese - err
+[2018-12-13T15:51:45.391] [ERROR] cheese - err
+[2018-12-13T15:51:45.462] [ERROR] cheese - err
+[2018-12-13T16:20:24.648] [ERROR] cheese - err
+[2018-12-13T16:20:24.734] [ERROR] cheese - err
+[2018-12-13T16:59:46.815] [ERROR] cheese - err
+[2018-12-13T16:59:52.141] [ERROR] cheese - err
+[2018-12-13T18:54:14.400] [ERROR] cheese - err
+[2018-12-13T18:54:33.128] [ERROR] cheese - err
+[2018-12-13T18:54:37.163] [ERROR] cheese - err
+[2018-12-13T19:03:45.179] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\nodejs\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\nodejs\\views\\index.html' }
+[2018-12-13T19:07:06.747] [ERROR] cheese - err
+[2018-12-13T19:07:09.898] [ERROR] cheese - err
+[2018-12-13T19:07:54.626] [ERROR] cheese - err
+[2018-12-13T19:13:22.373] [ERROR] cheese - err
+[2018-12-13T20:53:57.772] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }
+[2018-12-13T20:53:57.951] [ERROR] cheese - err
+[2018-12-13T20:54:57.426] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }
+[2018-12-13T20:54:57.470] [ERROR] cheese - err
+[2018-12-13T21:00:01.068] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:05:16.749] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }
+[2018-12-13T21:05:16.820] [ERROR] cheese - err
+[2018-12-13T21:06:40.965] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }
+[2018-12-13T21:06:40.989] [ERROR] cheese - err
+[2018-12-13T21:06:57.771] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:09:07.008] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:09:08.483] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:20:32.470] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:21:24.207] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-13T21:29:21.770] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }
+[2018-12-13T21:31:22.461] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\views\index.html']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\myphp_www\\PHPTutorial\\WWW\\views\\index.html' }

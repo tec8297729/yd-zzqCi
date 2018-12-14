@@ -1,4 +1,7 @@
 .DS_Store
 /node_modules/
 /dist/
+/文档/
 npm-debug.log
+app.all.js
+

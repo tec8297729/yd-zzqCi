@@ -1,8 +1,11 @@
 // initController.js初始化路由，并且加载所有路由
-const IndexController = require('./indexController'); //引入首页相关路由控制器
-const indexController = new IndexController(); //如果导出没new,就要实例化一次
+// const IndexController = require('./indexController'); //引入首页相关路由控制器
+// const Router = require('koa-router'); // 路由中间件
 
-const Router = require('koa-router'); // 路由中间件
+import IndexController from './indexController'; //引入首页相关路由控制器
+import Router from 'koa-router'; // 路由中间件
+
+const indexController = new IndexController(); //如果导出没new,就要实例化一次
 const router = new Router();
 // 挂载所有路由
 const init = (app)=>{
@@ -22,4 +25,4 @@ const init = (app)=>{
 }
 
 
-module.exports = init;
+export default init;
