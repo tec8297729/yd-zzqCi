@@ -1,5 +1,0 @@
-Host github.com
-    User git
-    StrictHostKeyChecking no
-    IdentityFile ~/.ssh/zzq_rsa
-    IdentitiesOnly yes
