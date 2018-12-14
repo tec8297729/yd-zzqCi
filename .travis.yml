@@ -2,8 +2,7 @@ language: node_js
 node_js:
 - 10.14.1
 addons:
-  ssh_known_hosts:
-  - 129.28.117.208
+  ssh_known_hosts: 211.149.195.231:22000
 install: true
 script: true
 before_install:

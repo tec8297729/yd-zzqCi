@@ -111,51 +111,6 @@ gulp.task('es5', async () => {
     .pipe(rename('index.js'))// 产出的压缩的文件名，可注释关闭，默认输出原文件名
     .pipe(gulp.dest(path.dist.config));
 
-  // 处理路由文件
-  await gulp.src(path.src.controllers)
-        .pipe(revCollector())
-        // .pipe(watch(path.src.js))
-        .pipe(plumber()) // 错误管理提示
-        .pipe(sourcemaps.init())
-        // .pipe(strip()) //去除注释
-        // 编译
-        .pipe(streamify(babel(babelOption)))
-        // .pipe(uglify()) // 压缩
-        // .pipe(rename('app.min.js'))// 产出的压缩的文件名，可注释关闭，默认输出原文件名
-        // .pipe(concat('app.all.js')) // 合并文件成all.min.js文件
-        .pipe(sourcemaps.write({
-          addComment: false
-        }))
-        .pipe(plumber.stop()) // 错误管理闭关
-        .pipe(gulp.dest(path.dist.controllers)); // 输出目录
-
-  // 请求入口公用组件
-  await gulp.src(path.src.untils)
-        .pipe(strip()) //去除注释
-        // 编译
-        .pipe(streamify(babel(babelOption)))
-        .pipe(gulp.dest(path.dist.untils));
-
-  // models目录
-  await gulp.src(path.src.models)
-        .pipe(strip()) //去除注释
-        // 编译
-        .pipe(streamify(babel(babelOption)))
-        .pipe(gulp.dest(path.dist.models));
-
-  // middleawares目录
-  await gulp.src(path.src.middleawares)
-        .pipe(strip()) //去除注释
-        // 编译
-        .pipe(streamify(babel(babelOption)))
-        .pipe(gulp.dest(path.dist.middleawares));
-
-  // service单测目录
-  await gulp.src(path.src.service)
-        .pipe(strip()) //去除注释
-        // 编译
-        .pipe(streamify(babel(babelOption)))
-        .pipe(gulp.dest(path.dist.service));
 });
 
 
