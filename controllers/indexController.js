@@ -1,7 +1,7 @@
 // 这里是indexController.js文件
 // const indexMd = require('../models/indexMd'); // 统一接口fetch封装
 // const url = require('url').URLSearchParams;
-import indexMd from '../models/indexMd'; // 统一接口fetch封装
+import indexMd from 'models/indexMd'; // 统一接口fetch封装
 // 读取后台相应API请求,(search,{id:22}) 搜索id=22文章
 function YiiApiGet(str, obj) {
   let host = 'http://localhost/yii/web/index.php?r=book/';

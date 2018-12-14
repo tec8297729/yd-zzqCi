@@ -1,5 +1,5 @@
-const SafeRequest = require('../untils/SafeRequest'); //统一接口请求
-
+// const SafeRequest = require('../untils/SafeRequest'); //统一接口请求
+import SafeRequest from 'untils/SafeRequest'; //统一接口请求
 /**
  * Index类 获取后台有关图书相关数据类
  * @class
@@ -30,4 +30,5 @@ class Index{
 
 }
 
-module.exports = new Index();
+// module.exports = new Index();
+export default new Index()

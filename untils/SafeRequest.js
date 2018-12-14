@@ -1,5 +1,6 @@
 // 接口统一调用此方法为入口,封装fetch,为了更好的容错处理
-const fetch = require('node-fetch'); // 请求接口组件
+// const fetch = require('node-fetch'); // 请求接口组件
+import fetch from 'node-fetch'; // 请求接口组件
 
 class SafeRequest {
   constructor (url,options){
@@ -38,4 +39,5 @@ class SafeRequest {
   }
 }
 
-module.exports = SafeRequest;
+// module.exports = SafeRequest;
+export default SafeRequest

@@ -17,10 +17,11 @@ import co from 'co'; // co组件,和swig配合使用
 // // 以下非koa组件
 import log4js from 'log4js'; // 打印错误日志
 import bodyParser from 'koa-bodyparser'; //解析POST数据请求
-import init from './controllers/initController'; // 初始化所有路由
+import init from 'controllers/initController'; // 初始化所有路由
 import config from './config'; // 配置node文件
-import errorHandler from './middleawares/errorHandler'; // 处理错误页面
-
+import errorHandler from 'middleawares/errorHandler'; // 处理错误页面
+import fetch from 'node-fetch';
+import 'babel-polyfill'; // gulp编译需要
 
 
 const app = new koa(); //koa实例
