@@ -1,13 +1,13 @@
 // guLp组件区域
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'), // 压缩
-  concat = require('gulp-concat'), // 合并
   watch = require('gulp-watch'), //监听
   plumber = require('gulp-plumber'), //错误管理 提示
   sourcemaps = require('gulp-sourcemaps'),
   strip = require('gulp-strip-comments'), //删除注释
   rename = require("gulp-rename"), // 文件名重命名
   streamify = require('gulp-streamify'), //只支持 buffer 的插件直接处理 stream
+  rollup = require('gulp-rollup'), // 集成的rollup
   babel = require('gulp-babel'), // babel编译
   revCollector = require('gulp-rev-collector'), // 路径替换
   gutil = require('gulp-util'); // 用来打印日志错误
@@ -16,7 +16,6 @@ var gulp = require('gulp'),
 var rollup = require('rollup'),
     resolve = require('rollup-plugin-node-resolve'), // 插件可以告诉 Rollup 如何查找外部模块
     commonjs = require('rollup-plugin-commonjs'), // 解析node_modules中的模块
-    rollupBabel = require('rollup-plugin-babel'), // rollup编译插件
     replace = require('rollup-plugin-replace'); // 可在源码中读取环境变量
 
 var release = "./dist/";
