@@ -1,4 +1,4 @@
-let request = require('supertest'); 
+let request = require('supertest');
 request = request('http://localhost/yii/web/index.php?r=book/'); // 请求服务器
 let data = {
   book_name: '测试书籍',
@@ -23,7 +23,7 @@ describe('YII后台接口', function(){
       .set('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8')
       .set('Content-Type', 'application/x-www-form-urlencoded') // 设置请求报头
       // .expect('Content-Type', /json/) // 判断响应头字段
-      .expect(200, done) // 断言判断如果返回状态码是200 
+      .expect(200, done) // 断言判断如果返回状态码是200
       .end(function(err, res) { // 结束测试用例
         if (err) return done(err); //如果有错误返回错误,否则正常done
         done();
@@ -42,13 +42,13 @@ describe('YII后台接口', function(){
       .set('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8')
       .set('Content-Type', 'application/x-www-form-urlencoded') // 设置请求报头
       // .expect('Content-Type', /json/) // 判断响应头字段
-      .expect(200,done) // 断言判断如果返回状态码是200 
+      .expect(200,done) // 断言判断如果返回状态码是200
       .end(function(err, res) { // 结束测试用例
         if (err) return done(err); //如果有错误返回错误,否则正常done
         done();
       });
   });
-  
+
   it('view 接口-查看单个数据', function(done){
     request.get('viewjson&id=11')
     .set('Content-Type', 'application/json; charset=UTF-8') // 判断响应头字段
@@ -58,14 +58,16 @@ describe('YII后台接口', function(){
       done();
     });
   });
-  it('delete 接口-删除数据', function(done){
-    request.get(`deletejson&id=${deleteId}`)
-    .set('Content-Type', 'application/json; charset=UTF-8') // 判断响应头字段
-    .expect(200)
-    .end(function(err, res) {
-      if (err) return done(err);
-      deleteId += deleteId;
-      done();
-    });
-  });
+
+  // it('delete 接口-删除数据', function(done){
+  //   request.get(`deletejson&id=${deleteId}`)
+  //   .set('Content-Type', 'application/json; charset=UTF-8') // 判断响应头字段
+  //   .expect(200)
+  //   .end(function(err, res) {
+  //     if (err) return done(err);
+  //     deleteId += deleteId;
+  //     done();
+  //   });
+  // });
+
 })
