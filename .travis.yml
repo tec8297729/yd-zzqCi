@@ -2,14 +2,14 @@
 language: node_js
 node_js:
 - 10.14.1
-
 # 可以添加多个主机或IP作为列表，默认只通信github
 addons:
   ssh_known_hosts:
   - 129.28.117.208
+install: true
+script: true
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
   -in zzq_rsa.enc -out ~/.ssh/zzq_rsa -d
 - chmod 600 ~/.ssh/zzq_rsa
-install: true
-script: true
