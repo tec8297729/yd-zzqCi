@@ -1,10 +1,17 @@
 language: node_js
-node_js:
-- 10.14.1
+node_js: 10
 addons:
   ssh_known_hosts: 129.28.117.208
+  apt:
+    update: true # Travis CI建议加的，自动更新api
 install: true
 script: true
+branches:
+  only:
+  - master # CI 只针对分支 dev
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv
-  -in gitzzqci_rsa.enc -out ~\/.ssh/gitzzqci_rsa -d
+  -in gitzzqci_rsa.enc -out ~/.ssh/gitzzqci_rsa -d
+  - chmod 600 ~/.ssh/gitzzqci_rsa
+- echo -e "Host 129.28.117.208\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
