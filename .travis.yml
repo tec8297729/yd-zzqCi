@@ -11,7 +11,12 @@ branches:
   - master # CI 只针对分支 dev
 
 before_install:
+<<<<<<< HEAD
 - openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv
   -in gitzzqci_rsa.enc -out ~/.ssh/gitzzqci_rsa -d
   - chmod 600 ~/.ssh/gitzzqci_rsa
 - echo -e "Host 129.28.117.208\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+=======
+- openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
+  -in zt_rsa.enc -out ~\/.ssh/zt_rsa -d
+>>>>>>> 6a2f78db0564c72be5c3cd2378838a6ce6cae9e9
