@@ -1,0 +1,38 @@
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  </script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/x-tag/2.0.9-alpha/x-tag-polyfilled.min.js"></script>
+  <script src="https://cdn.bootcss.com/x-tag/2.0.9-alpha/plugins/rendering/hyperHTML.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/x-tag/2.0.9-alpha/plugins/events/tap.js"></script>
+  <script src="https://cdn.bootcss.com/x-tag/2.0.9-alpha/plugins/attributes/src.js"></script> -->
+  <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
+  <!-- <link href="/css/site.css" rel="stylesheet"> -->
+  {% block head %}
+  {% endblock %}
+
+
+<body>
+  <div id="app">
+
+    <div class="wrap">
+      <!-- nav模块 -->
+      <x-nav></x-nav>
+
+
+      <div class="container">
+        <!-- 导航 -->
+        {% block navTitle %}{% endblock %}
+
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <x-footer></x-footer>
+
+  </div>
+</body>
+</html>
+{% block scripts %}{% endblock %}
