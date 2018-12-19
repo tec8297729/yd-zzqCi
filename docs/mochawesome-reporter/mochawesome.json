@@ -1,0 +1,179 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 1,
+    "pending": 0,
+    "failures": 4,
+    "start": "2018-12-19T06:51:01.921Z",
+    "end": "2018-12-19T06:51:01.939Z",
+    "duration": 18,
+    "testsRegistered": 5,
+    "passPercent": 20,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "48b7c24c-65ba-41ea-8793-15e8d729cf30",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "2c963eb1-1f05-45fe-90a0-d756d4cea35a",
+        "title": "YII后台接口",
+        "fullFile": "D:\\myphp_www\\PHPTutorial\\WWW\\nodejs\\dist\\service\\router.spec.js",
+        "file": "\\dist\\service\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "index 接口-所有数据",
+            "fullTitle": "YII后台接口 index 接口-所有数据",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "request.get('/').expect(200).end(function (err, res) {\n  if (err) return done(err);\n  done();\n});",
+            "err": {
+              "message": "TypeError: app.address is not a function",
+              "estack": "TypeError: app.address is not a function\n    at Test.serverAddress (node_modules\\supertest\\lib\\test.js:55:18)\n    at new Test (node_modules\\supertest\\lib\\test.js:36:12)\n    at Object.obj.(anonymous function) [as get] (node_modules\\supertest\\index.js:25:14)\n    at Context.<anonymous> (dist\\service\\router.spec.js:19:13)"
+            },
+            "isRoot": false,
+            "uuid": "36933e2d-58c7-4ff0-92a4-3a0d90e53922",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "createjson 接口-创建操作",
+            "fullTitle": "YII后台接口 createjson 接口-创建操作",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "//请求页面地址\nrequest.post('/create').send({\n  \"book_name\": '测试书籍',\n  \"author\": '左右',\n  \"book_img\": 'http://www.baiddu.com/1.jpg'\n}) //发送数据,可以是对象方式\n.set('Content-Type', 'application/json;charset=utf-8')\n// .expect('Content-Type', /json/) // 判断响应头字段\n.expect(200) // 断言判断如果返回状态码是200\n.end(function (err, res) {\n  // 结束测试用例\n  if (err) return done(err); //如果有错误返回错误,否则正常done\n  done();\n});",
+            "err": {
+              "message": "TypeError: app.address is not a function",
+              "estack": "TypeError: app.address is not a function\n    at Test.serverAddress (node_modules\\supertest\\lib\\test.js:55:18)\n    at new Test (node_modules\\supertest\\lib\\test.js:36:12)\n    at Object.obj.(anonymous function) [as post] (node_modules\\supertest\\index.js:25:14)\n    at Context.<anonymous> (dist\\service\\router.spec.js:27:13)"
+            },
+            "isRoot": false,
+            "uuid": "794d994b-14d9-450b-a50e-b69f8bcd178c",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "updatejson 接口-更新操作",
+            "fullTitle": "YII后台接口 updatejson 接口-更新操作",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "let newData = {\n  id: '11',\n  book_name: '测试书籍' + Math.floor(Math.random() * 10),\n  author: '左右2',\n  book_img: 'http://www.baiddu.com/2.jpg'\n};\n//请求页面地址\nrequest.post('/update').send(newData) //发送数据,可以是对象方式\n.set('Content-Type', 'application/json;charset=utf-8') // 设置请求报头\n// .expect('Content-Type', /json/) // 判断响应头字段\n.expect(200) // 断言判断如果返回状态码是200\n.end(function (err, res) {\n  // 结束测试用例\n  if (err) return done(err); //如果有错误返回错误,否则正常done\n  done();\n});",
+            "err": {
+              "message": "TypeError: app.address is not a function",
+              "estack": "TypeError: app.address is not a function\n    at Test.serverAddress (node_modules\\supertest\\lib\\test.js:55:18)\n    at new Test (node_modules\\supertest\\lib\\test.js:36:12)\n    at Object.obj.(anonymous function) [as post] (node_modules\\supertest\\index.js:25:14)\n    at Context.<anonymous> (dist\\service\\router.spec.js:50:13)"
+            },
+            "isRoot": false,
+            "uuid": "9d4c9e60-d0fd-489b-9e45-58bec446b347",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "view 接口-查看单个数据",
+            "fullTitle": "YII后台接口 view 接口-查看单个数据",
+            "timedOut": false,
+            "duration": 0,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "request.get('/view/11').set('Content-Type', 'application/json; charset=UTF-8') // 判断响应头字段\n.expect(200).end(function (err, res) {\n  if (err) return done(err);\n  done();\n});",
+            "err": {
+              "message": "TypeError: app.address is not a function",
+              "estack": "TypeError: app.address is not a function\n    at Test.serverAddress (node_modules\\supertest\\lib\\test.js:55:18)\n    at new Test (node_modules\\supertest\\lib\\test.js:36:12)\n    at Object.obj.(anonymous function) [as get] (node_modules\\supertest\\index.js:25:14)\n    at Context.<anonymous> (dist\\service\\router.spec.js:62:13)"
+            },
+            "isRoot": false,
+            "uuid": "10e235f8-b050-4de2-9d0a-67548ed6a112",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "36933e2d-58c7-4ff0-92a4-3a0d90e53922",
+          "794d994b-14d9-450b-a50e-b69f8bcd178c",
+          "9d4c9e60-d0fd-489b-9e45-58bec446b347",
+          "10e235f8-b050-4de2-9d0a-67548ed6a112"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 3,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "aa93f0f1-ee9d-4ab2-9e02-c7d6dba1b958",
+        "title": "html页面测试",
+        "fullFile": "D:\\myphp_www\\PHPTutorial\\WWW\\nodejs\\dist\\service\\html.spec.js",
+        "file": "\\dist\\service\\html.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "index－>create",
+            "fullTitle": "html页面测试 index－>create",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "rize.goto(`${host}`) // 输入网址跳转\n.assertTitle('z图书管理系统') // 断言标题\n.assertSee('书籍名称') // 断言是否有指定内容\n.end();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b009b549-35f0-4f24-a42b-7befc938830b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b009b549-35f0-4f24-a42b-7befc938830b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

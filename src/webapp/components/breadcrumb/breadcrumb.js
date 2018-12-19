@@ -2,7 +2,10 @@
  * @example <x-breadcrumb title="导航标题"></x-breadcrumb>
  * @description HTML页面直接使用标签，导航
 */
-let breadcrumb = xtag.create('x-breadcrumb', class extends XTagElement {
+export default xtag.create('x-breadcrumb', class extends XTagElement {
+  constructor() {
+    super();
+  }
   // 创建按钮，有默认初始值，也可获取标签上属性标签及url
   '::template(true)'() {
     return `
@@ -21,4 +24,4 @@ let breadcrumb = xtag.create('x-breadcrumb', class extends XTagElement {
   // 监听获取标签元素参考
   get 'title::attr' (){}
 });
-export default new breadcrumb()
+// export default new breadcrumb()

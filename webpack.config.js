@@ -3,6 +3,9 @@ const webpack = require('webpack'); // 调用webpack
 const HTMLPlugin = require('html-webpack-plugin')// 引入编译html模板插件
 const MiniCssExtractPlugin  = require('mini-css-extract-plugin')// 引入分离打包CSS
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); //
+const merge = require('webpack-merge'); // 合并webpack配置插件
+const argv = require('yargs-parser')(process.argv.slice(2)); // 可以解析参数成对象，也可以读取到webpack系统变量
+
 // 获取html-webpack-plugin参数的方法
 const getHtmlConfig = function(options){
   return {
@@ -17,14 +20,15 @@ const getHtmlConfig = function(options){
   };
 };
 
-const config = {
+const webpackConfig = {
   target: 'node',
   mode: 'production', // 设置默认环境development，命令直接--mode production
   //配置入口资源，分析入口文件里面所有引用包，编译都是从这找
   entry: path.join(__dirname, '/src/webapp/index.js'),
   output: {
-    filename: 'assets/js/[name].js', // 生成文件名[name].[chunkhash]
-    path: __dirname + '/dist/'// 输出目录
+    // filename: '[name].js', // 生成文件名[name].[chunkhash]
+    path: __dirname + '/dist/assets/js/',// 输出目录
+    // publicPath: '/js' // 生成的JS文件插入到html页面的前缀
   },
   //资源处理，帮我们编译CSS、LASS等加载器
   module: {
@@ -32,22 +36,23 @@ const config = {
       {
         test: /\.(js)$/,
         loader: 'babel-loader',
-        options: {
-          presets: ['es2015'],    // or whatever
-          plugins: [require('babel-plugin-transform-class-properties')], // or whatever
-          compact: false    // or false during development
-        },
-        exclude: /node_modules/, // 处理除了nodde_modules里的js文件
+        // options: {
+        //   presets: ['es2015'],    // or whatever
+        //   // plugins: [require('babel-plugin-transform-class-properties')], // or whatever
+        //   compact: false    // or false during development
+        // },
+        exclude: [/node_modules/,path.join(__dirname, 'src/webapp/components/')], // 处理除了nodde_modules里的js文件
       },
       /* 解析css,并不生成CSS */
       { test: /\.css$/,
         use: [
-          // {
-          //   loader: MiniCssExtractPlugin.loader,
-          //   options: {
-          //     // minimize: process.env.NODE_ENV === 'production',
-          //   }
-          // },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // minimize: process.env.NODE_ENV === 'production',
+              publicPath: './css/' // 无效果
+            }
+          },
           'css-loader',
         ]
       },
@@ -75,19 +80,20 @@ const config = {
     new HTMLPlugin(getHtmlConfig({
       name:'view'
     })),
-    // new MiniCssExtractPlugin({
-    //   filename: '../css/site.css'
-    // }), // 输出CSS文件
+    new MiniCssExtractPlugin({
+      filename: 'site.css'
+    }), // 输出CSS文件
+
   ],
   resolve: {
     // 资源另名处理
     alias: {
       // 给目录创建别名,以后在使用直接写'util/文件名.js'，而不用繁锁的../..写路径了
       '@': path.join(__dirname), // 根目录
-      '../assets': path.join(__dirname, '../assets'), // 根目录
     },
   },
 }
 
-
-module.exports = config;
+const _mode = argv.mode || 'development'; // 通过argv插件读取webpack环境变量，默认开发环境
+const _mergeConfig = require(`./config/webpack.config.${_mode}.js`); // 加载适合环境的配置
+module.exports = merge(webpackConfig,_mergeConfig);// 合并配置文件输出

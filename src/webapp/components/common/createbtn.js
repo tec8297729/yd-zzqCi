@@ -4,7 +4,7 @@
  * @example <x-createbtn title="" class="" id=""></x-createbtn>
  * @description 可单独使用，可嵌套使用，未集成JS绑定事件
 */
-let createbtn = xtag.create('x-createbtn', class extends XTagElement {
+export default xtag.create('x-createbtn', class extends XTagElement {
   // 生成完元素后运行的函数
   connectedCallback () {
     this.render('bar')
@@ -30,11 +30,6 @@ let createbtn = xtag.create('x-createbtn', class extends XTagElement {
       </button>
       `;
     }
-    // return {
-    //   title : this.title || '按钮',
-    //   btnClass : this.class || 'create_btn',
-    //   btnId : this.id || ''
-    // }
   }
   // 监听获取标签元素参考
   get 'title::attr' (){}
@@ -66,5 +61,3 @@ let createbtn = xtag.create('x-createbtn', class extends XTagElement {
   //   }
   // }
 });
-
-export default new createbtn()

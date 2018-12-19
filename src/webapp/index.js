@@ -4,14 +4,16 @@ import './components/common/createbtn';
 import './components/footer/footer';
 import './components/form/form';
 import './components/header/header';
+import Create from './lib/js/system';
 
 
-// require('./common/css/bootstrap.css');
-// require('./common/css/site.css');
 import './lib/css/site.css';
 
+let create = new Create();
+create.createFn()
+create.updateFn()
 
-window.onload = (function () {
+(function () {
   let indexBtn = document.getElementById('country_index');
   if(indexBtn){
     indexBtn.addEventListener('click', (e) => {
@@ -41,5 +43,5 @@ window.onload = (function () {
     }, false);
   }
 
-});
+})();
 

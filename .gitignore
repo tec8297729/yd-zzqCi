@@ -4,4 +4,6 @@
 /文档/
 npm-debug.log
 app.all.js
+/log/
+/logs/
 

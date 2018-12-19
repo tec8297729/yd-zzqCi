@@ -1,19 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
 <!-- 加载其它模板文件 -->
 {% extends 'layout.html' %}
 <!-- 定义title区域块 -->
 {% block title %}
   z图书管理系统
 {% endblock %}
+</head>
 
 {% block navTitle %}
 <x-breadcrumb title="编辑修改"></x-breadcrumb>
 {% endblock %}
 
-<!-- 定义head区域块 -->
-{% block head %}
-<script src="/js/index.js"></script>
 
-{% endblock %}
 
 <!-- 定义content区域块 -->
 {% block content %}
@@ -54,7 +55,5 @@
 </div>
 {% endblock %}
 
-{% block scripts %}
-<script src="/js/btn.js" type="module"></script>
 
-{% endblock %}
+</html>

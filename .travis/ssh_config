@@ -1,0 +1,12 @@
+User root
+Host yideng
+HostName 129.28.117.208
+Port 22
+StrictHostKeyChecking no
+IdentityFile ~/.ssh/zzq_rsa
+IdentitiesOnly yes
+Protocol 2
+Compression yes
+ServerAliveInterval 60
+ServerAliveCountMax 20
+LogLevel INFO

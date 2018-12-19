@@ -48,3 +48,34 @@
 [2018-12-16T00:05:46.436] [ERROR] cheese - err
 [2018-12-16T00:13:04.539] [ERROR] cheese - err
 [2018-12-16T00:13:04.683] [ERROR] cheese - err
+[2018-12-17T00:10:21.729] [ERROR] cheese - err
+[2018-12-17T01:37:53.680] [ERROR] cheese - err
+[2018-12-17T01:37:53.738] [ERROR] cheese - err
+[2018-12-19T01:59:33.820] [ERROR] cheese - err
+[2018-12-19T01:59:33.900] [ERROR] cheese - err
+[2018-12-19T01:59:33.907] [ERROR] cheese - err
+[2018-12-19T01:59:34.090] [ERROR] cheese - err
+[2018-12-19T01:59:34.093] [ERROR] cheese - err
+[2018-12-19T01:59:34.317] [ERROR] cheese - err
+[2018-12-19T01:59:38.618] [ERROR] cheese - err
+[2018-12-19T01:59:38.619] [ERROR] cheese - err
+[2018-12-19T02:08:27.324] [ERROR] cheese - err
+[2018-12-19T02:09:23.328] [ERROR] cheese - err
+[2018-12-19T02:24:58.310] [ERROR] cheese - { Error: ENOENT: no such file or directory, open 'D:\myphp_www\PHPTutorial\WWW\nodejs\dist\views\layout.html'
+    at Object.openSync (fs.js:436:3)
+    at Object.readFileSync (fs.js:341:35)
+    at Object.ret.load (D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\loaders\filesystem.js:59:15)
+    at exports.Swig.parseFile (D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\swig.js:403:31)
+    at getParents (D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\swig.js:480:14)
+    at exports.Swig.precompile (D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\swig.js:527:19)
+    at exports.Swig.compile (D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\swig.js:651:16)
+    at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\swig-templates\lib\swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   'D:\\myphp_www\\PHPTutorial\\WWW\\nodejs\\dist\\views\\layout.html' }
+[2018-12-19T02:32:54.539] [ERROR] cheese - err
+[2018-12-19T02:32:54.558] [ERROR] cheese - err
+[2018-12-19T02:32:54.574] [ERROR] cheese - err
