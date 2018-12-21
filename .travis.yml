@@ -5,7 +5,7 @@ addons:
 install:
 - npm install
 script:
-- npm run server:prod
+- npm run build
 - npm run server:pm2
 #script阶段之后执行
 after_script：script:
