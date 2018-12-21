@@ -7,8 +7,7 @@ describe("html页面测试", function(){
   it('index－>create',()=>{
     rize
       .goto(`${host}`) // 输入网址跳转
-      .waitForNavigation() // 等待跳转,因为是搜索会跳到结果页面
-      .assertSee('书籍名称') // 断言是否有指定内容
+      // .assertSee('书籍名称') // 断言是否有指定内容
       .clickLink('入库新书') // 点击指定按钮（内容）
       .waitForNavigation() // 等待跳转,因为是搜索会跳到结果页面
       .findAll('button',1,rize.assertClassHas,'create_btn') // css选择器[button所有的选中第一个]，断言是否有指定class
