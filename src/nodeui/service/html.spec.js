@@ -7,8 +7,16 @@ describe("html页面测试", function(){
   it('index－>create',()=>{
     rize
       .goto(`${host}`) // 输入网址跳转
-      .assertTitle('z图书管理系统') // 断言标题
+      .waitForNavigation() // 等待跳转,因为是搜索会跳到结果页面
       .assertSee('书籍名称') // 断言是否有指定内容
+      .clickLink('入库新书') // 点击指定按钮（内容）
+      .waitForNavigation() // 等待跳转,因为是搜索会跳到结果页面
+      .findAll('button',1,rize.assertClassHas,'create_btn') // css选择器[button所有的选中第一个]，断言是否有指定class
+      .type('input#book_name', 'size测试书籍') // 查找指定input在输入内容
+      .type('input#author', 'size作者')
+      .type('input#book_img', 'www.j.com/1.jpg')
+      .assertTitle('z图书管理系统') // 断言标题
+      .assertSee('size测试书籍') // 断言是否有指定内容
       .end();
     })
     // .assertClassHas('delete', 'btn btn-success') // 检测某个元素是否包含指定class
