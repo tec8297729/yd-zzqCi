@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "npm run service",
+    "test": "scripty",
     "dev": "cross-env NODE_ENV=development supervisor app.js",
     "dev2": "cross-env NODE_ENV=development webpack --mode production",
-    "prod": "cross-env NODE_ENV=production pm2 restart pm2.json",
+    "server:pm2": "scripty",
     "build": "cross-env NODE_ENV=production gulp && webpack --mode production",
     "stop": "pm2 stop all",
     "service": "node ./dist/mochaRunner.js",

@@ -5,11 +5,13 @@ addons:
 install:
 - npm install
 script:
-- npm run build
-- node ./dist/app.js
-- npm run test
+- npm run server:prod
+- npm run server:pm2
+#script阶段之后执行
+after_script：script:
+- npm run test #测试用例
 after_script:
-#构建完毕⾃自动将代码分发到远程主机
+#构建完毕，自动将代码分发到远程主机
 - scp -o StrictHostKeyChecking=no ./docs/ root@$ip2:/docs
 before_install:
 - openssl aes-256-cbc -K $encrypted_ee81ad9fc488_key -iv $encrypted_ee81ad9fc488_iv
