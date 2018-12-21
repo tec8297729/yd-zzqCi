@@ -100,3 +100,30 @@
 [2018-12-21T13:48:37.494] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
 [2018-12-21T13:48:37.796] [ERROR] cheese - err
 [2018-12-21T23:38:31.240] [ERROR] cheese - err
+[2018-12-22T00:57:17.368] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://test.fybqq.com/web/index.php?r=book/indexjson reason: Unexpected token < in JSON at position 4
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://test.fybqq.com/web/index.php?r=book/indexjson reason: Unexpected token < in JSON at position 4',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-22T00:57:17.696] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://test.fybqq.com/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 4
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://test.fybqq.com/web/index.php?r=book/createjson reason: Unexpected token < in JSON at position 4',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-22T00:57:17.954] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://test.fybqq.com/web/index.php?r=book/updatejson&id=11 reason: Unexpected token < in JSON at position 4
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://test.fybqq.com/web/index.php?r=book/updatejson&id=11 reason: Unexpected token < in JSON at position 4',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }

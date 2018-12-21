@@ -4,7 +4,7 @@
 import indexMd from '../models/indexMd'; // 统一接口fetch封装
 // 读取后台相应API请求,(search,{id:22}) 搜索id=22文章
 function YiiApiGet(str, obj) {
-  let host = 'http://localhost/yii/web/index.php?r=book/';
+  let host = 'http://test.fybqq.com/web/index.php?r=book/';
   let apiRouter = {
     index: `${host}indexjson`, // 读取全部数据
     search: `${host}viewjson`, // 自定义搜索可id,可作者author
