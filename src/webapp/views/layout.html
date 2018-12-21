@@ -10,6 +10,12 @@
   <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
   <!-- <link href="/css/site.css" rel="stylesheet"> -->
+  <!-- 如果需要禁止隐式的 DNS Prefetch，可以使用以下的标签 -->
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+  <!-- 使用DNS预解析 -->
+  <link rel="prefetch stylesheet" href="//a.cn/index.css">
+
+  <!-- 需要注意的是，虽然使用 DNS Prefetch 能够加快页面的解析速度，但是也不能滥用，因为有开发者指出 禁用DNS 预读取能节省每月100亿的DNS查询 -->
   {% block head %}
   {% endblock %}
 

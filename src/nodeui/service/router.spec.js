@@ -1,6 +1,6 @@
 let request = require('supertest');
-request = request('http://localhost:88'); // 请求服务器
-
+request = request('http://localhost:88'); // 请求本地node服务
+// request = request('http://localhost/yii/web/index.php?r=book/'); // 后台地址备用
 
 let deleteId = 48;
 describe('YII后台接口', function(){

@@ -10,8 +10,8 @@ import Create from './lib/js/system';
 import './lib/css/site.css';
 
 let create = new Create();
-create.createFn()
-create.updateFn()
+create.createFn();
+create.updateFn();
 
 (function () {
   let indexBtn = document.getElementById('country_index');

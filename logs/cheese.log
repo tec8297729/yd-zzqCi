@@ -79,3 +79,23 @@
 [2018-12-19T02:32:54.539] [ERROR] cheese - err
 [2018-12-19T02:32:54.558] [ERROR] cheese - err
 [2018-12-19T02:32:54.574] [ERROR] cheese - err
+[2018-12-20T16:28:51.675] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-20T16:28:53.576] [ERROR] cheese - err
+[2018-12-20T16:30:08.778] [ERROR] cheese - err
+[2018-12-20T17:45:42.598] [ERROR] cheese - err
+[2018-12-20T17:45:58.238] [ERROR] cheese - err
+[2018-12-20T17:53:19.538] [ERROR] cheese - err
+[2018-12-20T17:53:24.445] [ERROR] cheese - err
+[2018-12-20T18:08:25.435] [ERROR] cheese - err
+[2018-12-20T18:41:45.571] [ERROR] cheese - err
+[2018-12-20T18:49:52.890] [ERROR] cheese - err
+[2018-12-20T19:56:10.050] [ERROR] cheese - err
+[2018-12-20T22:11:57.891] [ERROR] cheese - err
+[2018-12-20T23:02:32.317] [ERROR] cheese - err
+[2018-12-20T23:15:14.984] [ERROR] cheese - err
+[2018-12-21T00:15:39.687] [ERROR] cheese - err
+[2018-12-21T00:15:42.341] [ERROR] cheese - err
+[2018-12-21T00:15:44.824] [ERROR] cheese - err
+[2018-12-21T00:15:46.200] [ERROR] cheese - err
+[2018-12-21T13:48:37.494] [ERROR] cheese - { code: 2, message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-21T13:48:37.796] [ERROR] cheese - err
