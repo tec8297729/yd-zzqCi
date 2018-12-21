@@ -1,7 +1,7 @@
 const Rize = require('rize');
 const rize = new Rize(); //可以设置一些参数
 
-const host = 'http://localhost:8292/';
+const host = 'http://127.0.0.1:8292/';
 
 describe("html页面测试", function(){
   it('index－>create',()=>{
