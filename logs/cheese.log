@@ -127,3 +127,13 @@
     type: 'invalid-json' },
   code: 2,
   message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-22T16:38:47.038] [ERROR] cheese - Promise {
+  <rejected> { FetchError: invalid json response body at http://test.fybqq.com/web/index.php?r=book/indexjson reason: Unexpected token < in JSON at position 0
+      at D:\myphp_www\PHPTutorial\WWW\nodejs\node_modules\node-fetch\lib\index.js:241:32
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+    message:
+     'invalid json response body at http://test.fybqq.com/web/index.php?r=book/indexjson reason: Unexpected token < in JSON at position 0',
+    type: 'invalid-json' },
+  code: 2,
+  message: 'node-fetch请求失败,后端报警-请求挂了' }
+[2018-12-22T16:38:47.673] [ERROR] cheese - err

@@ -52,3 +52,4 @@ init(app); // 初始化所有路由(引入app),为后续app.use挂载一些初�
 app.listen(config.port,()=>{
   console.log(`服务启动成功 http://localhost:${config.port}`)
 });
+module.exports = app;
