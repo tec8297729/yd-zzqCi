@@ -19,7 +19,7 @@ if(process.env.NODE_ENV == "development"){
 // 正式上线环境变量
 if(process.env.NODE_ENV == "production"){
   const prodConfig = {
-    port:8292
+    port:80
   }
   config = _.extend(config,prodConfig);
 }

@@ -1,5 +1,5 @@
 let request = require('supertest');
-request = request('http://localhost:8292'); // 请求本地node服务
+request = request('http://localhost'); // 请求本地node服务
 // request = request('http://localhost/yii/web/index.php?r=book/'); // 后台地址备用
 
 let deleteId = 48;
