@@ -6,7 +6,7 @@ install:
 - npm install
 before_script:
 - npm run build
-- npm run server:pm2
+# - npm run server:pm2
 script:
 # - curl http://localhost:8292/
 - npm run test #测试用例
