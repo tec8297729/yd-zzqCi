@@ -6,9 +6,9 @@ install:
 - npm install
 before_script:
 - npm run build
-- npm run server:pm2
+- sudo npm run server:pm2
 script:
-- curl http://localhost/
+- curl http://localhost:8292/
 - npm run test #测试用例
 
 after_script:
