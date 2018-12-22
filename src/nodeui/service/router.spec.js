@@ -1,5 +1,5 @@
 let request = require('supertest');
-const index = require('../app');
+const index = require('../app'); // 这个是关键，启用app.js服务
 request = request(index.listen()); // 请求本地node服务
 // request = request('http://localhost/yii/web/index.php?r=book/'); // 后台地址备用
 
