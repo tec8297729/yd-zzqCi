@@ -4,14 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "scripty",
+    "test": "npm run service",
     "dev": "cross-env NODE_ENV=development supervisor app.js",
-    "server:pm2": "scripty",
     "build": "cross-env NODE_ENV=production gulp && webpack --mode production",
     "stop": "pm2 stop pm2.json",
     "service": "node ./dist/mochaRunner.js",
+    "server:test": "scripty",
     "server:dev": "scripty",
     "server:prod": "scripty",
+    "server:pm2": "scripty",
     "server:lint": "scripty",
     "docs": "jsdoc ./models/ -d ./docs/jsdocs"
   },
